@@ -32,6 +32,8 @@ $$
 \sum_{k=1}^\infty \frac{1}{k^2} = \frac{\pi^2}{6}.
 $$
 
-
+They will be shown correctly in LaTeX and PDF, and the Wordpress HTML code
+will have them work with the MathJax-LaTeX plugin. However they won't
+be shown on Github.
 
 
