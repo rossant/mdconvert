@@ -22,6 +22,10 @@ def convert_to_wordpress(filename):
     os.remove(filename1)
     print("Done!")
 
-if __name__ == '__main__':
+def main():
     for file in listfiles():
         convert_to_wordpress(file)
+
+if __name__ == '__main__':
+    main()
+    

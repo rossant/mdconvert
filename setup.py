@@ -1,8 +1,17 @@
 """
 Windows installer: execute python setup.py py2exe
 """
-from distutils.core import setup
-import py2exe
+from setuptools import setup
 
-setup(console=['mdpdf.py', 'mdwp.py'])
-
+setup(
+    name='mdconvert',
+    version='0.0.1.dev',
+    packages=['mdconvert'],
+    entry_points={
+        'console_scripts': [
+            'mdpdf=mdconvert.mdpdf:main',
+            'mdtex=mdconvert.mdtex:main',
+            'mdwp=mdconvert.mdwp:main'
+            ]
+        }
+    )

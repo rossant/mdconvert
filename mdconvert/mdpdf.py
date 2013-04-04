@@ -11,6 +11,10 @@ def convert_to_pdf(filename):
     call_pandoc(filename, filename1, "markdown", "pdf")
     print("Done!")
 
-if __name__ == '__main__':
+def main():
     for file in listfiles():
         convert_to_pdf(file)
+
+if __name__ == '__main__':
+    main()
+    
