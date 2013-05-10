@@ -27,6 +27,8 @@ def listfiles():
     files = [file for file in sys.argv[1:]]
     if not files:
         files = [file for file in os.listdir('.') if file.endswith('.md')]
+    files = filter(lambda file: file.endswith('.md') or file.endswith('.txt'),
+        files)
     return files
     
 if __name__ == '__main__':
